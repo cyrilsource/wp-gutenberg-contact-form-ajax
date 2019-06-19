@@ -9,13 +9,13 @@ function my_acf_contactFormAjax() {
     'name' => 'contact-ajax',
     'title' => __('Contact Form with ajax'),
     'description' => __('A contact form with ajax'),
-    'render_template'   => 'template-parts/blocks/contact/contact-ajax.php',
+    'render_template'   => 'template-parts/blocks/contact-ajax/contact-ajax.php',
     'category' => 'common',
     'icon' => 'email-alt',
     'keywords' => array( 'contact'),
     'mode'			=> 'preview',
     'enqueue_assets' 	=> function(){
-      wp_enqueue_script( 'block-contact', get_template_directory_uri() . '/template-parts/blocks/contact/contact.js', array('jquery'), '1.0.0', true );
+      wp_enqueue_script( 'block-contact', get_template_directory_uri() . '/template-parts/blocks/contact-ajax/contact-ajax.js', array('jquery'), '1.0.0', true );
       wp_localize_script('block-contact', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
       }
     ));
