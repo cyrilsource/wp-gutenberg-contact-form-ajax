@@ -1,4 +1,4 @@
-wp-gutenberg-contact-form with Ajax
+<h1>wp-gutenberg-contact-form with Ajax</h1>
 
 a contact form form for WordPress Gutenberg with ACF plugin with Ajax
 
