@@ -12,7 +12,7 @@ name,email,phone,url,subject,message
 
 After you create other fields:
 
-text field 'message_succes'
+text field 'message_success'
 
 text field 'text_button_send'
 
