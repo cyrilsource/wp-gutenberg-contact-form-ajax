@@ -4,17 +4,17 @@
  *
  * This is the template that displays the contact form block.
  */
-$message_success = get_field('message_succes');
+$message_success = get_field('message_success');
 $text_button_send = get_field('text_button_send');
 $color_ = get_field('color_');
-$color_text_button_send = get_field('color_text_bouton_send');
+$color_text_button_send = get_field('color_text_button_send');
 $color_hover = get_field('color_hover');
 $size_font_sent_message = get_field('size_font_sent_message');
 $to = get_field('to');
 
 //message after sending message ?>
 <div id="messageSuccess" class="alert-message success" style="display:none">
-  <span><?php echo $message_succes; ?></span>
+  <span><?php echo $message_success; ?></span>
 </div>
 <div id="textError" class="alert-message error" style="display:none">
   <span>Error sorry try again later</span>
@@ -23,8 +23,7 @@ $to = get_field('to');
 <div class="form1">
 	<?php if( have_rows('input') ): ?>
     	<form action="#" id="contactForm" method="post">
-    	<?php wp_nonce_field('contact-form', 'contact-verif');
-    	// loop through the rows of data
+    	<?php // loop through the rows of data
     	while ( have_rows('input') ) : the_row();
 		// display a sub field value
 		$label = get_sub_field('label');
