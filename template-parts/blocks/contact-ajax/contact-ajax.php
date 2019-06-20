@@ -76,7 +76,7 @@ $to = get_field('to');
 		}
 	endwhile; ?>
 	<?php wp_nonce_field('ajax_contact_nonce', 'security');?>
-      	<button id="submit" type="submit"><?php echo $text_bouton_envoi; ?></button>
+      	<button id="submit" type="submit"><?php echo $text_button_send; ?></button>
 	<input type="hidden" name="action" value="contact" />
       	<input type="hidden" name="to" id="to" value="<?php echo $to; ?>" />
  	</form>
