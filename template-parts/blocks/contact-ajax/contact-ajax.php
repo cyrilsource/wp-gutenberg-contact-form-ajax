@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: Contact
+ * Block Name: Contact-ajax
  *
  * This is the template that displays the contact form block.
  */
