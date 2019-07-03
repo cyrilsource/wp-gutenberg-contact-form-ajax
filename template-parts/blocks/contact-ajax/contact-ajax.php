@@ -91,12 +91,7 @@ endif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-	
-#contactAlertError,
-#contactAlertSuccess {
-  height: 150px;
-}
-	
+		
 .form1 .inputError {
   border: 2px solid red;
 }
