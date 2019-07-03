@@ -13,7 +13,6 @@ jQuery( document ).ready( function( $ ) {
   
   //when submit is clicked
   $( '#contactForm' ).on( 'click', '#submit', function( e ) {
-  error = false;
   e.preventDefault();
   
   //errors treatments
